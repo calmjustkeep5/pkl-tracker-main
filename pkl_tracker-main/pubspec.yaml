@@ -1,0 +1,62 @@
+name: apk_pkl_tracker
+description: Aplikasi monitoring PKL siswa.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  # Local Storage / Database
+  sqflite: ^2.3.0
+  path: ^1.9.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.5.5
+
+  # Image Picker
+  image_picker: ^1.2.3
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+
+  # Maps & Location
+  geolocator: ^11.0.0
+  geocoding: ^2.0.6
+  google_maps_flutter: ^2.6.1
+
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.5.3
+  http: ^1.6.0
+  pdf: ^3.11.0
+  printing: ^5.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^2.4.8
+  hive_generator: ^2.0.1
+  flutter_lints: ^3.0.1
+  # Tambahkan package ini untuk generate icon
+  flutter_launcher_icons: ^0.13.1
+
+# Konfigurasi Icon Aplikasi
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo_pkl.png"
+  min_sdk_android: 21 # Sesuai dengan environment Flutter modern
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo_pkl.png
